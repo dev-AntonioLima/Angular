@@ -1,0 +1,12 @@
+COMPONENTE (VIEW):
+
+ Template;
+ Metadata: processamento das classes;
+ Dado a ser mostrado na tela (Data Binding);
+ Comportamento da VIEW;
+
+SERVICE: Responsável por ter a lógica de negócio e se conectar com o back end.
+
+ROUTER: Responsável pela navegação.
+
+DIRETIVA: Responsável por modificar elementos DOM e/ou seu comportamento.

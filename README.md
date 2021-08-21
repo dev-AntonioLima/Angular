@@ -1,5 +1,5 @@
 # angular
 Repositório destinado a prática de Angular.
 <p align="center">
-<img src="img/angular-logo.png">
+<img width="500px"src="img/angular-logo.png">
 </p>

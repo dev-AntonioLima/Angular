@@ -9,6 +9,8 @@ export class CursosComponent implements OnInit {
 
   nomePortal: string;
 
+  cursos: string[] = ['Java', 'Ext Js', 'Angular'];
+
 
   constructor() { 
   this.nomePortal = 'http://loiane.training';

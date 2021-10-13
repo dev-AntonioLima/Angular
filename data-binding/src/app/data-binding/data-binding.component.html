@@ -15,5 +15,34 @@
         <img bind-src="urlImagem">
     </article>
 
+    <article>
+        <h3>Class e Style Binding</h3>
+        <div>
+            Selecione uma classe:
+            <!-- Variável declarada em elemento HTML -->
+            <select #classeVariavel (change)="0">
+                <option value="alert-success">Sucesso</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-warning">Alerta</option>
+                <option value="alert-danger">Erro</option>
+            </select>
+            <br><br>
+            <!-- Comparação entre valor da classe selecionada -->
+            <!-- Property binding de classe -->
+            <div class="alert" role="alert" [class.alert-success]="classeVariavel.value == 'alert-success'">Sucesso</div>
+            <div class="alert" role="alert" [class.alert-info]="classeVariavel.value == 'alert-info'">Info</div>
+            <div class="alert" role="alert" [class.alert-warning]="classeVariavel.value =='alert-warning'">Alerta</div>
+            <div class="alert" role="alert" [class.alert-danger]="classeVariavel.value =='alert-danger'">Erro</div>
+
+            <!-- Interpolação -->
+            <div class="alert {{ classeVariavel.value }}" role="alert">Texto colorido conforme valor do combobox</div>
+
+            <!-- Property binding com estilo de classe -->
+            <div class="alert alert-danger" role="alert" [style.display]="classeVariavel.value == 'alert-danger' ? 'block' : 'none'">Erro -
+                Esse texto somente aparece em caso de erro.
+            </div>
+        </div>
+    </article>
+
 
 </section>

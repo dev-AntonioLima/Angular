@@ -1,4 +1,4 @@
-<section class="property-binding">
+<!-- <section class="property-binding">
 
     <article>
         <h3>Interpolação/Interpolation</h3>
@@ -19,7 +19,7 @@
         <h3>Class e Style Binding</h3>
         <div>
             Selecione uma classe:
-            <!-- Variável declarada em elemento HTML -->
+             Variável declarada em elemento HTML 
             <select #classeVariavel (change)="0">
                 <option value="alert-success">Sucesso</option>
                 <option value="alert-info">Info</option>
@@ -27,22 +27,48 @@
                 <option value="alert-danger">Erro</option>
             </select>
             <br><br>
-            <!-- Comparação entre valor da classe selecionada -->
-            <!-- Property binding de classe -->
-            <div class="alert" role="alert" [class.alert-success]="classeVariavel.value == 'alert-success'">Sucesso</div>
+             Comparação entre valor da classe selecionada 
+             Property binding de classe 
+            <div class="alert" role="alert" [class.alert-success]="classeVariavel.value == 'alert-success'">Sucesso
+            </div>
             <div class="alert" role="alert" [class.alert-info]="classeVariavel.value == 'alert-info'">Info</div>
             <div class="alert" role="alert" [class.alert-warning]="classeVariavel.value =='alert-warning'">Alerta</div>
             <div class="alert" role="alert" [class.alert-danger]="classeVariavel.value =='alert-danger'">Erro</div>
 
-            <!-- Interpolação -->
+             Interpolação
             <div class="alert {{ classeVariavel.value }}" role="alert">Texto colorido conforme valor do combobox</div>
 
-            <!-- Property binding com estilo de classe -->
-            <div class="alert alert-danger" role="alert" [style.display]="classeVariavel.value == 'alert-danger' ? 'block' : 'none'">Erro -
+             Property binding com estilo de classe 
+            <div class="alert alert-danger" role="alert"
+                [style.display]="classeVariavel.value == 'alert-danger' ? 'block' : 'none'">Erro -
                 Esse texto somente aparece em caso de erro.
             </div>
         </div>
     </article>
 
+
+</section> -->
+
+<section class="event-binding">
+
+    <article>
+        <h3>Event Binding</h3>
+        <div>
+            <button (click)="botaoClicado()"class="btn- btn-primary">Me Clique !</button>
+            <br>
+            <br>
+
+        <input type="text" (keyup)="onKeyUp($event)"
+            (keyup.enter)="salvarValor(campoInput.value)"
+            (blur)="salvarValor(campoInput.value)"
+            #campoInput>
+
+        <p>Valor Atual digitado: {{ valorAtual }}</p>
+        <p>Valor Salvo: {{ valorSalvo }}</p>
+
+
+        <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.highlight]="isMouseOver" [class.highlightFalse]="!isMouseOver">Passe o mouse sobre mim </span>
+        </div>
+    </article>
 
 </section>

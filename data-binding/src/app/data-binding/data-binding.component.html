@@ -3,6 +3,7 @@
     <article>
         <h3></h3>
         <app-curso [nomeCurso]="nome"></app-curso>
+        <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador>
     </article>
 
 </section>

@@ -1,0 +1,5 @@
+Aula 19 - Usando pré-processadores 
+
+#1 ng new meu-projeto --style=sass
+#2 ng new meu-projeto --style=less
+#3 ng new meu-projeto --style=stylus

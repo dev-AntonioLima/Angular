@@ -1,0 +1,7 @@
+ng new NomeProjeto ---> cria o projeto.
+
+ng init ---> cria o projeto no diretório existente.
+
+cd NomeProjeto ---> acessa o diretório do projeto.
+
+ng serve ---> executa o projeto o deixando disponível na porta 4200.

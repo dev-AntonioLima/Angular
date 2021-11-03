@@ -1,0 +1,9 @@
+Comandos para geração de arquivos:
+
+#1 Component ---> ng g component meu-component
+#2 Service ---> ng g service meu-servico
+#3 Directive ---> ng g directive minha-diretiva
+#4 Pipe ---> ng g pipe meu-pipe
+#5 Class ---> ng g class minha-classe
+#6 Interface ---> ng g interface minha-interface
+#7 Enum ---> ng g enum meu-enum
